@@ -443,7 +443,7 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
                               status === "LOCKED"
                             ) {
                               void router.push(
-                                `/hindilessons?fast-forward=${unit.unitNumber}`,
+                                `/lesson?fast-forward=${unit.unitNumber}`,
                               );
                               return;
                             }
