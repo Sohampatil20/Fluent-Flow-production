@@ -152,7 +152,7 @@ const Leaderboard: NextPage = () => {
                 competing
               </p>
               <Link
-                href="/lesson?practice"
+                href="/lesson"
                 className="w-fit rounded-2xl border-2 border-b-4 border-gray-200 px-16 py-2 text-center font-bold uppercase text-blue-400 transition hover:bg-gray-50 hover:brightness-90"
               >
                 Start a lesson

@@ -313,7 +313,7 @@ const TileTooltip = ({
       japanese
     </button>
     <button
-      onClick={() => handleLessonSelect("/learn")}
+      onClick={() => handleLessonSelect("/marathilessons")}
       className="p-0 bg-green-500 text-white rounded opacity-20 text-xs border-none"
     >
       marathi

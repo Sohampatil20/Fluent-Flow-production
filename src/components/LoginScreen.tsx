@@ -73,6 +73,7 @@ export const LoginScreen = ({
 }) => {
   const router = useRouter();
   const loggedIn = useBoundStore((x) => x.loggedIn);
+  const logIn = useBoundStore((x) => x.logIn);
   const setUsername = useBoundStore((x) => x.setUsername);
   const setName = useBoundStore((x) => x.setName);
 
@@ -92,6 +93,7 @@ export const LoginScreen = ({
     const username = name.replace(/ +/g, "-");
     setUsername(username);
     setName(name);
+    logIn(username);
     void router.push("/learn");
   };
 
@@ -113,7 +115,14 @@ export const LoginScreen = ({
           <CloseSvg />
           <span className="sr-only">Close</span>
         </button>
-        
+        <button
+          className="hidden rounded-2xl border-2 border-b-4 border-gray-200 px-4 py-3 text-sm font-bold uppercase text-blue-400 transition hover:bg-gray-50 hover:brightness-90 sm:block"
+          onClick={() =>
+            setLoginScreenState((x) => (x === "LOGIN" ? "SIGNUP" : "LOGIN"))
+          }
+        >
+          {loginScreenState === "LOGIN" ? "Sign up" : "Login"}
+        </button>
       </header>
       <div className="flex grow items-center justify-center">
         <div className="flex w-full flex-col gap-5 sm:w-96">
@@ -141,9 +150,14 @@ export const LoginScreen = ({
                       ?
                       {ageTooltipShown && (
                         <div className="absolute -right-5 top-full z-10 w-72 rounded-2xl border-2 border-gray-200 bg-white p-4 text-center text-xs leading-5 text-gray-800">
-                          Providing your age ensures you get the right Fluent Flow
+                          Providing your age ensures you get the right FluentFlow
                           experience. For more details, please visit our{" "}
-                          
+                          <Link
+                            href=""
+                            className="text-blue-700"
+                          >
+                            Privacy Policy
+                          </Link>
                         </div>
                       )}
                     </div>
@@ -186,7 +200,7 @@ export const LoginScreen = ({
             className="rounded-2xl border-b-4 border-blue-500 bg-blue-400 py-3 font-bold uppercase text-white transition hover:brightness-110"
             onClick={logInAndSetUserProperties}
           >
-            {loginScreenState === "LOGIN" ? "Log in" : "Create profile"}
+            {loginScreenState === "LOGIN" ? "Log in" : "Create account"}
           </button>
           <div className="flex items-center gap-2">
             <div className="h-[2px] grow bg-gray-300"></div>
@@ -208,7 +222,7 @@ export const LoginScreen = ({
             </button>
           </div>
           <p className="text-center text-xs leading-5 text-gray-400">
-            By signing in to Fluent Flow, you agree to our{" "}
+            By signing in to FluentFlow, you agree to our{" "}
             <Link
               className="font-bold"
               href=""
@@ -228,14 +242,14 @@ export const LoginScreen = ({
             This site is protected by reCAPTCHA Enterprise and the Google{" "}
             <Link
               className="font-bold"
-              href=""
+              href="https://policies.google.com/privacy"
             >
               Privacy Policy
             </Link>{" "}
             and{" "}
             <Link
               className="font-bold"
-              href=""
+              href="https://policies.google.com/terms"
             >
               Terms of Service
             </Link>{" "}

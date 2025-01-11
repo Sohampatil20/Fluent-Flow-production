@@ -122,12 +122,7 @@ export const LeftBar = ({ selectedTab }: { selectedTab: Tab | null }) => {
             >
               <div className="flex flex-col py-2">{/* Other content */}</div>
               <div className="flex flex-col border-t-2 border-gray-300 py-2">
-                <button
-                  className="px-5 py-2 text-left uppercase hover:bg-gray-100"
-                  onClick={() => setLoginScreenState("SIGNUP")}
-                >
-                  Create a profile
-                </button>
+                
                 <Link
                   className="px-5 py-2 text-left uppercase hover:bg-gray-100"
                   href="/settings/account"
