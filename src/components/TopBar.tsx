@@ -11,8 +11,23 @@ import {
   GlobeIconSvg,
   LingotsTreasureChestSvg,
   MoreOptionsSvg,
-  PodcastIconSvg,
+ 
 } from "./Svgs";
+const TranslatorIconSvg = (props: ComponentProps<"svg">) => (
+  <svg width="46" height="46" viewBox="0 0 46 46" fill="none" {...props}>
+    <circle
+      cx="23"
+      cy="23"
+      r="19"
+      fill="#58CC02"
+      stroke="#58CC02"
+      strokeWidth="2"
+    />
+    <text x="23" y="27" textAnchor="middle" fontSize="10" fill="white">
+      T
+    </text>
+  </svg>
+);
 
 const EmptyFireTopBarSvg = (props: ComponentProps<"svg">) => {
   return (
@@ -186,14 +201,15 @@ export const TopBar = ({
                 return (
                   <div className="flex grow flex-col">
                     <Link
-                      className="flex items-center gap-2 p-2 font-bold text-gray-700"
-                      href=""
-                      target="_blank"
+                     className="flex items-center gap-2 p-2 font-bold text-gray-700"
+                     href="https://translator-soham-2024.web.app/"
+                     target="_blank"
                       rel="noopener noreferrer"
-                    >
-                      <PodcastIconSvg className="h-10 w-10" />
-                      Podcast
-                    </Link>
+                      > 
+                     <TranslatorIconSvg className="h-10 w-10" />
+                     Translator
+                     </Link>
+
                     <Link
                       className="flex items-center gap-2 border-t-2 border-gray-300 p-2 font-bold text-gray-700"
                       href=""
