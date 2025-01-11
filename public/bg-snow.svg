@@ -1,0 +1,78 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="1674" height="511" viewBox="0 0 1674 511" xml:space="preserve">
+  <g opacity=".9" fill="#FFFFFF">
+    <!-- Brighter Stars (with glowing effect) -->
+    <circle cx="547.3" cy="405.6" r="3">
+      <animate attributeName="r" from="3" to="4" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="405.6" to="400" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="747.2" cy="361.2" r="2.8">
+      <animate attributeName="r" from="2.8" to="3.5" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="361.2" to="355" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="648.9" cy="342.2" r="3.2">
+      <animate attributeName="r" from="3.2" to="4" dur="1.2s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="342.2" to="335" dur="1.2s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="601.2" cy="341.6" r="3.5">
+      <animate attributeName="r" from="3.5" to="4.2" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="341.6" to="336" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="576.4" cy="255.4" r="3">
+      <animate attributeName="r" from="3" to="3.8" dur="1.8s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="255.4" to="250" dur="1.8s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="631.2" cy="241.7" r="3">
+      <animate attributeName="r" from="3" to="3.8" dur="1.3s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="241.7" to="235" dur="1.3s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="570.5" cy="190.7" r="2.8">
+      <animate attributeName="r" from="2.8" to="3.5" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="190.7" to="185" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="460.1" cy="293.3" r="2.8">
+      <animate attributeName="r" from="2.8" to="3.5" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="293.3" to="288" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="468" cy="365.1" r="2.8">
+      <animate attributeName="r" from="2.8" to="3.5" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="365.1" to="359" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="470.6" cy="486.6" r="2.8">
+      <animate attributeName="r" from="2.8" to="3.5" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="486.6" to="480" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#fff;#ff0;#fff" dur="1s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Comets (with tails) -->
+    <circle cx="200" cy="100" r="3" fill="white">
+      <animate attributeName="cy" from="100" to="500" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="cx" from="200" to="1600" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="r" from="3" to="6" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="stroke" values="white;yellow;white" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values="0;3;0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="200" r="2" fill="white">
+      <animate attributeName="cy" from="200" to="500" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="cx" from="400" to="1300" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="r" from="2" to="5" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="stroke" values="white;yellow;white" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values="0;3;0" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="800" cy="250" r="3" fill="white">
+      <animate attributeName="cy" from="250" to="500" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="cx" from="800" to="1600" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="r" from="3" to="6" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="stroke" values="white;yellow;white" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values="0;3;0" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
