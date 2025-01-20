@@ -129,7 +129,7 @@ export const LeftBar = ({ selectedTab }: { selectedTab: Tab | null }) => {
                 >
                   Settings
                 </Link>
-                <Link href="http://localhost:3000" passHref>
+                <Link href="https://fluent-flow-production.vercel.app/" passHref>
                   <button
                     className="px-5 py-2 text-left uppercase hover:bg-gray-100"
                     onClick={logOut}
